@@ -47,7 +47,7 @@ const FindMyChief = () => {
 
     useEffect(() => {
         fetchChiefs().catch(error => console.log(error));
-    }, []);
+    }, [fetchChiefs]);
 
     return (
         <>
