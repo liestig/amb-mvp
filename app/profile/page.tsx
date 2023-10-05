@@ -82,7 +82,7 @@ const ProfileEditPage: React.FC = () => {
                     <textarea
                         id="description"
                         name="description"
-                        className="w-full px-3 py-2 border rounded focus:outline-none focus:border-blue-500"
+                        className="w-full px-3 py-2 border rounded text-black focus:outline-none focus:border-blue-500"
                         value={formData.description}
                         onChange={handleChange}
                         rows={4}
@@ -97,26 +97,26 @@ const ProfileEditPage: React.FC = () => {
                     <input
                         type="text"
                         id="address"
-                        className="w-full px-3 py-2 border rounded focus:outline-none focus:border-blue-500"
+                        className="w-full px-3 py-2 border rounded text-black focus:outline-none focus:border-blue-500"
                         name="address"
                         value={formData.address}
                         onChange={handleChange}
                     />
                 </div>
 
-                <div className="mb-4">
-                    <input
-                        type="checkbox"
-                        id="isChief"
-                        name="isChief"
-                        checked={formData.isChief}
-                        onChange={handleChange}
-                        className="mr-2"
-                    />
-                    <label htmlFor="isChief" className="text-gray-700 text-sm font-bold">
-                        Je suis un chef
-                    </label>
-                </div>
+                {/*<div className="mb-4">*/}
+                {/*    <input*/}
+                {/*        type="checkbox"*/}
+                {/*        id="isChief"*/}
+                {/*        name="isChief"*/}
+                {/*        checked={formData.isChief}*/}
+                {/*        onChange={handleChange}*/}
+                {/*        className="mr-2"*/}
+                {/*    />*/}
+                {/*    <label htmlFor="isChief" className="text-gray-700 text-sm font-bold">*/}
+                {/*        Je suis un chef*/}
+                {/*    </label>*/}
+                {/*</div>*/}
 
                 <button
                     type="submit"

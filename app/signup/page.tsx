@@ -206,7 +206,7 @@ const SignupPage = () => {
                     </div>
 
                     <textarea
-                        placeholder="Description (facultatif)"
+                        placeholder="Description (minimum 500 caractères)"
                         className="border rounded-md p-2 mb-4 w-full text-black"
                         name="description"
                         value={formData.description}
